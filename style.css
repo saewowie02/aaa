@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.9375em 1.875em;
+    background-color: #ba9926;
+   width: 100%;
+   position: fixed;
+   z-index: 999;
+}
+.logo {
+    font-size: 1.25em;
+    color:rgb(255, 255, 255);
+
+}
+.navigation a{
+    text-decoration: none;
+    margin-left: 0.9375em;
+    font-size: 1.125em;
+    color: rgb(225, 225, 235);
+}
+.navigation a:hover {
+    color: rgb(183, 183, 194);
+}
+section {
+    padding: 6.25em 12.5em;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/emily-bernal-v9vII5gV8Lw-unsplash.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.main-title h2 {
+    color: #fff;
+    font-size: 33px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.main-title h2 span {
+    font-size: 2.0625em;
+    font-weight: 800;
+    color: #ba9926;
+    display: inline-block;
+    margin-top: 20px;
+}
+.main-title p {
+    color: #fff;
+    font-size: 1.25em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main-btn a{
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    padding: 15px 20px;
+    font-size: 0.9375em;
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 10px;
+    transition: 0.4s ease;
+}
+.main-btn a:hover{
+    transform: scale(1.1);
+    background-color: #ba9926;
+
+}
+.social-icon a{
+    color: #fff;
+    font-size: 1.5625em;
+    display: inline-block;
+    padding-top: 20px;
+    transition: .4s ease;
+    margin-left: 40px;
+}
+.social-icon a:hover {
+    color: #ba9926;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #ba9926;
+    font-size: 1.875em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: #fff;
+    width: 325px;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 55px;
+    margin: 15px;
+    transition: .4s ease;
+}
+.icon {
+    font-size: 7.1875em;
+    display: flex;
+    justify-content: center;
+    color: #ba9926;
+    padding: 25px;
+}
+.info h2 {
+    text-align: center;
+    color: #ba9926;
+    font-size: 1.875em;
+    font-weight: 700px;
+    margin-bottom: 25px;
+}
+.info p {
+    font-size: 0.94117em;
+    text-align: center;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.project {
+    background-color: rgb(14, 13, 13);
+}
+.project .content {
+    margin: 30px;
+}
+.project-card {
+    background-color: #fff;
+    width: 16em;
+    min-height: 20em;
+    border: 1px #fff solid;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px;
+    transition: .4s ease;
+}
+.project-card:hover {
+    transform: scale(1.1);
+}
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-image img{
+    width: 100%;
+}
+.project-info {
+    padding: 1em;
+    text-align: center;
+    color: #ba9926;
+    font-size: 1.1em;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    padding-right: 20px;
+}
+.footer-info {
+    color: #fff;
+    font-size: 0.9375em;
+}
+.footer-info span{
+    color: #ba9926;
+}
+.footer .social-icon{
+    font-size: 0.9375em;
+}
+@media screen and (max-width:700px){
+    .header{
+        padding: .5em 1.1em;
+    }
+
+    .logo{
+        font-size: .8em;
+    }
+    .navigation a{
+        margin-left: .6em;
+        font-size: .9em;
+    }
+    section{
+        padding: 5em 1em;
+    }
+    .main-title h2{
+        font-size: 25px;
+    }
+    .main-title p{
+        font-size: .9em;
+    }
+}
